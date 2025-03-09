@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-2.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+        .container .child {
+            background-color: red;
+            min-height: 50px;
+            width: calc(25% - 10px);
+        }
+        @media only screen and (max-width: 1024px) {
+            .container .child {
+                width: calc(50% - 10px);
+            }
+        }
+        @media only screen and (max-width: 720px) {
+            .container .child {
+                width: calc(100% - 10px);
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">Cột 1</div>
+        <div class="child">Cột 2</div>
+        <div class="child">Cột 3</div>
+        <div class="child">Cột 4</div>
+    </div>
+</body>
+</html>
