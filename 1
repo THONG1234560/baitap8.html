@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-1.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+            text-align: center;
+            line-height: 50px ;
+        }
+        .container {
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
+            gap: 1px;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+        .container .child1, 
+        .container .child2 {
+            background-color: lightblue;
+            width: calc(50% - 0.5px);
+            min-height: 50px;
+        }
+        .container .child3 {
+            background-color: lightblue;
+            width: 100%;
+            min-height: 50px;
+        }
+        @media only screen and (max-width: 480px) {
+            .container .child1, 
+            .container .child2,
+            .container .child3 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1">Khối 11</div>
+        <div class="child2">Khối 2</div>
+        <div class="child3">Khối 3</div>
+    </div>
+</body>
+</html>
