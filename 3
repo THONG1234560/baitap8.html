@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-3.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+            line-height: 50px;
+            color: white;
+            background-color: black;
+        }
+        .container {
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            padding: 0px 10px;
+            flex-wrap: wrap;
+        }
+        .container .child {
+            min-height: 50px;
+                width: calc(50% - 5px);
+            }
+        @media only screen and (max-width: 720px) {
+            .container .child {
+                width: calc(100% - 5px);
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">Thông Tin 1</div>
+        <div class="child">Thông Tin 2</div>
+        <div class="child">Thông Tin 3</div>
+        <div class="child">Thông Tin 4</div>
+    </div>
+</body>
+</html>
