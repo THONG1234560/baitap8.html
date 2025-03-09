@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-8.html</title>
+    <style>
+        body {
+            font-family: Arial;
+            width: 700px;
+        }
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 0 10px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .container1 a {
+            text-decoration: none; 
+            color: white; 
+        }
+        .container2 {
+            background-color: rgb(233, 229, 229);
+            display: flex;
+            width: 100%;
+            height: 250px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container3 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .container3 .child1,
+        .container3 .child2 {
+            background-color: lightblue;
+            width: calc(50% - 10px);
+            min-height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .container3 .child3 {
+            background-color: lightblue;
+            width: calc(100% - 10px);
+            min-height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        @media only screen and (max-width: 780px) {
+            body {
+                width: 600px;
+            }
+            .container3 .child1,
+            .container3 .child2,
+            .container3 .child3 {
+        width: 100%;
+            }
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div>Mylogo</div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+    </div>
+    <div class="container2">
+        <h1>1200 x 400</h1>
+    </div>
+    <div class="container3">
+        <div class="child1">Giới thiệu 1</div>
+        <div class="child2">Giới thiệu 2</div>
+        <div class="child3">Giới thiệu 3</div>
+    </div>        
+</body>
+</html>
